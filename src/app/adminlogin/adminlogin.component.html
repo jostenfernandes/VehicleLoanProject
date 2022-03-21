@@ -1,0 +1,46 @@
+<!-- <div class="form">
+    <h2>Admin Login Here</h2>
+    <form #loginForm="ngForm" (ngSubmit)="validateLogin(loginForm)">
+        <table>
+            <tr>
+                <td>Email ID</td><td> <input type="text" name="email" ngModel> </td>
+            </tr>
+            <tr>
+                <td>Password</td><td> <input type="password" name="password" ngModel> </td>
+            </tr>
+            
+            <tr>
+                <td><input type="reset" value="RESET"  class="btn btn-danger"></td>
+                <td> <input type="submit" value="LOGIN" class="btn btn-success"> </td>
+            </tr>
+        </table>
+    </form>
+    
+</div> -->
+
+
+<section class="wrapper m-lg-5">
+    <div class="container">
+        <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 text-center">
+            <div class="logo">
+                <img src="/assets/images/HomeCar.png" class="img-fluid" alt="Logo">
+            </div>
+            <form class="rounded bg-white shadow py-5 px-4" #loginForm="ngForm" (ngSubmit)="validateLogin(loginForm)">
+                <h3 class="text-dark fw-bolder fs-4 mb-5">Admin Login</h3>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" ngModel>
+                    <label for="floatingInput">Admin Id</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" ngModel>
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="col-lg-6 w-100 d-lg-flex">
+                    <button type="reset" value="LOGIN" class="btn btn-primary submit_btn w-100 my-4 me-5">Reset</button>
+                    <button type="submit" value="LOGIN" class="btn btn-primary submit_btn w-100 my-4">Log In</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</section>

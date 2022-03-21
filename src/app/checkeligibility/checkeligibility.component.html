@@ -1,0 +1,194 @@
+<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+    <div class="wrapper wrapper--w790">
+        <div class="card card-5">
+            <div class="card-heading">
+                <h2 class="title">Check Eligibility Form</h2>
+            </div>
+            <div class="card-body">
+
+                <form #checkForm="ngForm" (ngSubmit)="checkEligibility(checkForm.value)">
+
+                    <!--Vehicle Details-->
+                    <div class="mb-4">
+                        <h2 style="text-align: center; font-weight: 600;">Vehicle Details</h2>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Car Make</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="cmake" name="cmake" required
+                                #cmake="ngModel" placeholder="Car Make" minlength="3" maxlength="10" pattern="^[a-zA-Z]+$" ngModel>
+                            <span *ngIf="cmake.invalid && cmake.touched" style="color: red;">
+                            Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">CarModel</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="cmodel" name="cmodel" required #cmodel='ngModel'  placeholder="Car Model" 
+                                minlength="3" maxlength="10" pattern="^[a-zA-Z]+$" ngModel>
+                            <span *ngIf="cmodel.invalid && cmodel.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Ex-Showroom Price</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" id="showroom" name="showroom" required #showroom='ngModel' placeholder="Ex-Showroom Price" minlength="3" maxlength="25" pattern="^[0-9]+$" ngModel>
+                            <span *ngIf="showroom.invalid && showroom.touched" style="color: red;">
+                                Please enter a valid input </span><br> 
+                            </div>
+                        </div>
+                    </div>
+
+                   <div class="form-row">
+                        <div class="name">On-Road Price</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" id="onroad" name="onroad" required #onroad='ngModel' placeholder="On Road Price" pattern="^[0-9]+$" ngModel>
+                            <span *ngIf="onroad.invalid && onroad.touched" style="color: red;">
+                            Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <!--Applicant Details-->
+                    <div class="mb-4">
+                        <h2 style="text-align: center; font-weight: 600;">Applicant Details</h2>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">First Name</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" required id="fname" #fname='ngModel' name="fname" placeholder="First Name" 
+                                minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" ngModel>
+                            </div>
+                        <span *ngIf="fname.invalid && fname.touched" style="color: red;">
+                        Please enter a valid input </span><br>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Last Name</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" required id="lname" #lname='ngModel' name="lname" placeholder="Enter yourLast Name" 
+                                minlength="3" maxlength="25" pattern="^[a-zA-Z]+$" ngModel>
+                            </div>
+                        <span *ngIf="lname.invalid && lname.touched" style="color: red;">
+                        Please enter a valid input </span><br>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Age</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" id="age" name="age" required #age='ngModel' placeholder="Enter your Age" pattern="[0-9]{2}" minlength="2" maxlength="2" ngModel>
+                            <span *ngIf="age.invalid && age.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                  <div class="form-row">
+                        <div class="name">Gender</div>
+                        <div class="p-t-15">
+                            <label class="radio-container m-r-55">Male
+                                <input type="radio" checked="checked" name="exist" ngModel>
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio-container">Female
+                                <input type="radio" name="exist">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Type of Employment</div>
+                        <div class="value">
+                            <div class="input-group">
+                                
+                                <select name="subject" class="input--style-5" style="padding-right: 342px; padding-top: 10px; padding-bottom: 10px; border: none;">
+                                    <option disabled="disabled" selected="selected"></option>
+                                    <option>Salaried Person</option>
+                                    <option>Self Employed</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Existing EMI</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" id="emi" name="emi" required #emi='ngModel' placeholder="Existing EMI" pattern="[0-9]+$" minlength="2" maxlength="10" ngModel>
+                            <span *ngIf="emi.invalid && emi.touched" style="color: red;">
+                            Please enter a valid input </span><br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Contact Details-->
+                    <div class="mb-4">
+                        <h2 style="text-align: center; font-weight: 600;">Contact Details</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Mobile No</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5"  id="mob" name="mob" required #mob='ngModel' placeholder="MobileNo" pattern="[0-9]{10}" maxlength="10" ngModel>
+                            </div>
+                        <span *ngIf="mob.invalid && mob.touched" style="color: red;">
+                        Please enter a valid input </span><br> 
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Email</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="email" id="email" name="email" required email #email='ngModel' placeholder="Email Id" 
+                                ngModel>
+                            </div>
+                        <span *ngIf="!email.valid && email.touched" style="color: red;">
+                        Please enter a valid input </span><br>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button [disabled]="checkForm.invalid" class="btn btn--radius-2 btn--red " type="submit">
+                            Check Eligibility
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="form-row">
+    <div class="name">Subject</div>
+    <div class="value">
+        <div class="input-group">
+            <div class="rs-select2 js-select-simple select--no-search">
+                <select name="subject">
+                    <option disabled="disabled" selected="selected">Choose option</option>
+                    <option>Subject 1</option>
+                    <option>Subject 2</option>
+                    <option>Subject 3</option>
+                </select>
+                <div class="select-dropdown"></div>
+            </div>
+        </div>
+    </div>
+</div>-->

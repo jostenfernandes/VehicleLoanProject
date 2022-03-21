@@ -1,0 +1,20 @@
+<p>showregiform works!</p>
+<table class="table table-striped">
+    <tr><td>userId</td><td>Password</td><td>firstName</td><td>LastName</td><td>Email</td><td>Gender</td><td>mobileNo</td><td>DOB</td><td>Age</td><td>Address</td><td>City</td><td>State</td><td>PinCode</td></tr>
+    <tr *ngFor="let vh of regiformList">
+        <td>{{vh.registerId}}</td>
+        <td>{{vh.password}}</td>
+        <td>{{vh.firstName}}</td>
+         <td>{{vh.lastName}}</td>
+        <td>{{vh.email}}</td>
+         <td>{{vh.gender}}</td>
+        <td>{{vh.mobileNo}}</td>
+        <td>{{vh.dob}}</td> 
+        <td>{{vh.age}}</td>
+        <td>{{vh.address}}</td>
+        <td>{{vh.city}}</td>
+        <td>{{vh.state}}</td>
+        <td>{{vh.pinCode}}</td>         
+    </tr>
+</table>
+

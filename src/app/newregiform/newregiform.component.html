@@ -1,0 +1,316 @@
+<!-- 
+<form #regiformForm="ngForm" (ngSubmit)="saveRegiform(regiformForm)" class="table table-success table-striped">
+    <table >
+        <tr >
+            <td>Register Id</td><td> <input type="text" name="registerId" ngModel> </td>
+        </tr>
+        <tr >
+            <td>Password</td><td> <input type="password" name="password" ngModel> </td>
+        </tr>
+        <tr >
+            <td>First Name</td><td> <input type="text" name="firstName" ngModel> </td>
+        </tr>
+        <tr >
+            <td>Last Name</td><td> <input type="text" name="lastName" ngModel> </td>
+        </tr>
+        <tr >
+            <td>Email</td><td> <input type="email" name="email" ngModel> </td>
+        </tr>
+        <tr >
+            <td>Gender</td><td> <input type="radio" name="gender" value="male" ngModel> Male <input type="radio" name="gender" value="female" ngModel> Female  </td>
+        </tr>
+        <tr >
+            <td>Mobile No</td><td> <input type="number" name="mobileNo" ngModel> </td>
+        </tr>
+        <tr >
+            <td>Date Of Birth</td><td> <input type="date" name="dob" ngModel> </td>
+        </tr>
+        <tr >
+            <td>Age</td><td> <input type="text" name="age" ngModel> </td>
+        </tr>
+        <tr >
+            <td>Address</td><td> <input type="text" name="address" ngModel> </td>
+        </tr>
+        <tr >
+            <td>City</td><td> <input type="text" name="city" ngModel> </td>
+        </tr>
+        <tr >
+            <td>State</td><td> <input type="text" name="state" ngModel> </td>
+        </tr>
+        <tr >
+            <td>PinCode</td><td> <input type="number" name="pinCode" ngModel> </td>
+        </tr>
+        <tr >
+            <td><input type="reset" value="RESET" class="btn btn-dark"></td>
+            <td> <input type="submit" value="SAVE" class="btn btn-success"> </td>
+        </tr>
+    </table>
+</form>  -->
+
+
+<!-- <section class="wrapper">
+    <div class="container">
+        <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 text-center">
+            <div class="logo">
+                <img src="/assets/images/Logo.png" class="img-fluid m-5" alt="logo">
+            </div>
+            <form class="rounded bg-white shadow p-5" #regiformForm="ngForm" (ngSubmit)="saveRegiform(regiformForm)">
+                <h3 class="text-dark fw-bolder fs-4 mb-2">Create an Account</h3>
+
+                <div class="fw-normal text-muted mb-5">
+                    Already have an account? 
+                    <a routerLink="/login" class="text-primary fw-bold text-decoration-none">Sign in here</a>
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="name@example.com" name="registerId" ngModel>
+                    <label for="floatingFirstName">Register ID</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingFirstName" placeholder="name@example.com" name="firstName" ngModel>
+                    <label for="floatingFirstName">First Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingLastName" placeholder="name@example.com" name="lastName" ngModel>
+                    <label for="floatingLastName">Last Name</label>
+                </div> 
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" ngModel>
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" ngModel>
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingLastName" placeholder="name@example.com" name="gender" ngModel>
+                    <label for="floatingLastName">Gender</label>
+                </div> 
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingLastName" placeholder="name@example.com" name="dob" ngModel>
+                    <label for="floatingLastName">DOB</label>
+                </div> 
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingLastName" placeholder="name@example.com" name="age" ngModel>
+                    <label for="floatingLastName">Age</label>
+                </div> 
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingLastName" placeholder="name@example.com" name="address" ngModel>
+                    <label for="floatingLastName">Address</label>
+                </div> 
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingLastName" placeholder="name@example.com" name="city" ngModel>
+                    <label for="floatingLastName">City</label>
+                </div> 
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingLastName" placeholder="name@example.com" name="state" ngModel>
+                    <label for="floatingLastName">State</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingLastName" placeholder="name@example.com" name="pinCode" ngModel>
+                    <label for="floatingLastName">Pincode</label>
+                </div>
+                <div class="col-lg-6 w-100 d-lg-flex">
+                <button type="submit" class="btn btn-primary submit_btn w-100 my-4 me-5">Reset</button>
+                <button type="submit" class="btn btn-primary submit_btn w-100 my-4">Register</button> 
+                </div>
+                <button type="submit" class="btn btn-primary submit_btn w-100 my-4 me-5">Log in</button>
+            </form>
+        </div>
+    </div>
+</section>   -->
+
+
+<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+    <div class="wrapper wrapper--w790">
+        <div class="card card-5">
+            <div class="card-heading">
+                <h2 class="title">Registration Form</h2>
+            </div>
+            <div class="card-body">
+
+                <form #regiformForm="ngForm" (ngSubmit)="saveRegiform(regiformForm)" #checkForm="ngForm"  (ngSubmit)="registrationDetails(checkForm.value)">
+
+                <div class="logo text-center">
+                    <img src="/assets/images/Logo.png" class="img-fluid mb-5" alt="Logo">
+                </div>
+                
+                <div class="text-center">
+                <h3 class="text-dark fw-bolder fs-4 mb-2">Create an Account</h3>
+
+                <div class="fw-normal text-muted mb-5">
+                    Already have an account? 
+                    <a routerLink="/login" class="text-primary fw-bold text-decoration-none">Sign in here</a>
+                </div>
+                </div>
+
+                    <!--registration Details-->
+
+                    <!-- <div class="form-row">
+                        <div class="name">Register ID</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" id="registerId" name="registerId" required
+                                #registerId="ngModel" placeholder="Enter your Application ID"   pattern="^[0-9]+$" ngModel>
+                            <span *ngIf="registerId.invalid && registerId.touched" style="color: red;">
+                            Please enter your Register Id </span><br>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="form-row">
+                        <div class="name">First name</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" id="firstName" name="firstName" required #firstName='ngModel'  placeholder="Enter your First name" 
+                                minlength="2" maxlength="10" pattern="^[a-zA-Z]+$" ngModel>
+                            <span *ngIf="firstName.invalid && firstName.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Last name</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="lastName" name="lastName" required #lastName='ngModel'  placeholder="Enter your Last name" 
+                                minlength="3" maxlength="10" pattern="^[a-zA-Z]+$" ngModel>
+                            <span *ngIf="lastName.invalid && lastName.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Email</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="email" id="email" name="email" required email #email='ngModel' placeholder="Enter your yor email" 
+                                ngModel>
+                            </div>
+                        <span *ngIf="!email.valid && email.touched" style="color: red;">
+                        Please enter a valid input </span><br>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Password</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="password" id="password" name="password" required #password='ngModel'  placeholder="Enter your password" 
+                                ngModel>
+                            <span *ngIf="password.invalid && password.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Gender</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="gender" name="gender" required #gender='ngModel'  placeholder="Enter your gender" 
+                                 pattern="^[a-zA-Z]+$" ngModel>
+                            <span *ngIf="gender.invalid && gender.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Mobile No</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5"  id="mobileNo" name="mobileNo" required #mobileNo='ngModel' placeholder="Enter your Mobile Number" pattern="[0-9]{10}" maxlength="10" ngModel>
+                            </div>
+                        <span *ngIf="mobileNo.invalid && mobileNo.touched" style="color: red;">
+                        Please enter a valid input </span><br> 
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">DOB</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="date" id="dob" name="dob" required #dob='ngModel'  ngModel>
+                            <span *ngIf="dob.invalid && dob.touched" style="color: red;">
+                                Please enter a valid input </span><br> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Age</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" id="age" name="age" required #age='ngModel'
+                                maxlength="2" pattern="[0-9]{2}+$" placeholder="Enter your Age" ngModel>
+                            <span *ngIf="age.invalid && age.touched" style="color: red;">
+                                Please enter a valid input </span><br> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Address</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="address" name="address" required #address='ngModel'  placeholder="Enter your Address" 
+                                minlength="3" maxlength="10" pattern="^[a-zA-Z]+$" ngModel>
+                            <span *ngIf="address.invalid && address.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="name">State</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="state" name="state" required #state='ngModel'  placeholder="Enter your state" 
+                                minlength="3" maxlength="10" pattern="^[a-zA-Z]+$" ngModel>
+                            <span *ngIf="state.invalid && state.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">City</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="city" name="city" required #city='ngModel'  placeholder="Enter your city" 
+                                minlength="3" maxlength="10" pattern="^[a-zA-Z]+$" ngModel>
+                            <span *ngIf="city.invalid && city.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Pin Code</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5"  id="pinCode" name="pinCode" required #pinCode='ngModel' placeholder="(Ex: 581456)" pattern="[0-9]{6}" minlength="3" maxlength="6" ngModel>
+                            </div>
+                        <span *ngIf="pinCode.invalid && pinCode.touched" style="color: red;">
+                        Please enter a valid input </span><br> 
+                        </div>
+                    </div>
+
+
+                    <div class="text-center">
+                        <button [disabled]="checkForm.invalid" class="btn btn--radius-2 btn--red " type="submit">
+                            Submit
+                        </button> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

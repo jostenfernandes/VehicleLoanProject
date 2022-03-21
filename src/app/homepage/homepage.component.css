@@ -1,0 +1,80 @@
+/* Home Banner */
+#home {
+    /* background-color: #94cbe0;  */
+    background-image: url("/assets/images/bg1.webp") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner_wrapper {
+    padding-top: 100px;
+}
+
+.banner_wrapper .top-menu .card {
+    height: 275px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.banner_wrapper .top-menu .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms ease;
+}
+
+.banner_wrapper .top-menu .card:hover img {
+    transform: scale(1.1)
+}
+
+.main-btn {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 27px;
+    border: 1px solid #e81922; 
+    color: #e81922;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;   
+    background:linear-gradient(to right, #e81922 50%, transparent 50%);
+    background-size:200% 100%;
+    background-position: right bottom;
+    transition:all 0.5s ease-out;
+    text-decoration: none;
+} 
+.main-btn:hover {
+    color: #fff;  
+    background-position: left bottom; 
+} 
+
+h1 {
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #111111;
+    margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1 span {
+    color: #e81922;
+}
+
+
+/* Other information */
+
+.about-section .card,
+.about-section .card img
+{
+    border-radius: 0.625rem;
+}
+.about-section .text-sec
+{
+    padding-left:2rem;
+}
+
+
+
+

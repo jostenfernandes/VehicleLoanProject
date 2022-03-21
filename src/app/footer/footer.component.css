@@ -1,0 +1,8 @@
+/* Footer CSS */
+.copyright{
+    background: #e81922;
+}
+.copyright p,
+.copyright a{
+    color: #fff;
+}
