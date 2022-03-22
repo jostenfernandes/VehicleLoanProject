@@ -1,0 +1,141 @@
+<!-- <p>add-vehicle works!</p>
+
+<form #vehicleForm="ngForm" (ngSubmit)="saveVehicle(vehicleForm)">
+    <table>
+        <tr>
+            <td>Vehicle ID</td><td> <input type="text" name="vid" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Car Make</td><td> <input type="text" name="carMake" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Car Model</td><td> <input type="text" name="carModel" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Ex-Showroom Price</td><td> <input type="text" name="exShowroomPrice" ngModel> </td>
+        </tr>
+
+        <tr>
+            <td><input type="reset" value="RESET"></td>
+            <td> <input type="submit" value="SAVE"> </td>
+        </tr>
+    </table>
+</form>  -->
+
+<!-- 
+<section class="vh-100 gradient-custom">
+    <form #vehicleForm="ngForm" (ngSubmit)="saveVehicle(vehicleForm)">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase mb-5">Vehicle Details</h2>
+      
+                    <div class="form-outline form-white mb-4">
+                      <input type="text" id="typeEmailX" class="form-control form-control-lg" name="vid" ngModel/>
+                      <label class="form-label" >Vehicle Id</label>
+                    </div>
+    
+                    <div class="form-outline form-white mb-4">
+                        <input type="text" id="typeEmailX" class="form-control form-control-lg" name="carMake" ngModel />
+                        <label class="form-label" >Car Make</label>
+                      </div>
+    
+                      <div class="form-outline form-white mb-4">
+                        <input type="text" id="typeEmailX" class="form-control form-control-lg" name="carModel" ngModel/>
+                        <label class="form-label" >Car Model</label>
+                      </div>
+
+                      <div class="form-outline form-white mb-4">
+                        <input type="number" id="typeEmailX" class="form-control form-control-lg" name="exShowroomPrice" ngModel/>
+                        <label class="form-label" >Ex-Showroon Price</label>
+                      </div>
+    
+      
+                    <button class="btn btn-outline-light btn-lg px-5 me-5" type="submit">Submit</button>
+                    <button class="btn btn-outline-light btn-lg px-5" type="reset">Reset</button>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </form>
+</section> -->
+
+
+<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+  <div class="wrapper wrapper--w790">
+      <div class="card card-5">
+          <div class="card-heading">
+              <h2 class="title">Application Form</h2>
+          </div>
+          <div class="card-body">
+
+              <form #vehicleForm="ngForm" (ngSubmit)="saveVehicle(vehicleForm)" #checkForm="ngForm" (ngSubmit)="employmentDetails(checkForm.value)">
+
+                  <!--Employment Details-->
+                  <div class="mb-4">
+                      <h2 style="text-align: center; font-weight: 600;">Vehicle Details</h2>
+                  </div>
+               <!--   <div class="form-row">
+                      <div class="name">Vehicle ID</div>
+                      <div class="value">
+                          <div class="input-group">
+                              <input class="input--style-5" id="vid" name="vid" required
+                              #vid="ngModel" placeholder="Enter your Vehicle ID" minlength="2" maxlength="10" pattern="^[0-9]+$" ngModel>
+                          <span *ngIf="vid.invalid && vid.touched" style="color: red;">
+                          Please enter a valid input </span><br>
+                          </div>
+                      </div>
+                  </div>-->
+
+                  <div class="form-row">
+                      <div class="name">Car Make</div>
+                      <div class="value">
+                          <div class="input-group">
+                              <input class="input--style-5" type="text" id="carMake" name="carMake" required #carMake='ngModel'  placeholder="Enter your Car Make"  ngModel>
+                          <span *ngIf="carMake.invalid && carMake.touched" style="color: red;">
+                              Please enter a valid input </span><br>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="name">Car Model</div>
+                    <div class="value">
+                        <div class="input-group">
+                            <input class="input--style-5" id="carModel" name="carModel" required #carModel='ngModel'  placeholder="Enter your Car Model" 
+                             ngModel>
+                        <span *ngIf="carModel.invalid && carModel.touched" style="color: red;">
+                            Please enter a valid input </span><br>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="form-row">
+                      <div class="name">Existing EMI</div>
+                      <div class="value">
+                          <div class="input-group">
+                              <input class="input--style-5"  id="exShowroomPrice" name="exShowroomPrice" required #exShowroomPrice='ngModel' placeholder="Enter your Existing EMI" pattern="[0-9]+$" ngModel>
+                          </div>
+                      <span *ngIf="exShowroomPrice.invalid && exShowroomPrice.touched" style="color: red;">
+                      Please enter a valid input </span><br> 
+                      </div>
+                  </div>
+
+                  <div class="text-center">
+                      <button [disabled]="checkForm.invalid" class="btn btn--radius-2 btn--red " type="submit">
+                          Submit
+                      </button> 
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>

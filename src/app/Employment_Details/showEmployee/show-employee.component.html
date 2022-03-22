@@ -1,0 +1,15 @@
+<p>show-employee works yes!</p>
+
+<table class="table table-striped">
+      <tr>
+        <td>Type of Employment</td>
+        <td>Annual Salary</td>
+        <td>Existing EMI</td>
+       </tr>
+        <tr *ngFor ="let eh of employeeList">
+            <td>{{eh.typeOfEmployment}}</td>
+            <td>{{eh.annualSalary}}</td>
+            <td>{{eh.existingEMI}}</td>
+
+        </tr>
+</table>

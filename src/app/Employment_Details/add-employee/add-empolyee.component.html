@@ -1,0 +1,174 @@
+<!-- <p>add-empolyee works hiiii!</p>
+
+<form #employmentForm="ngForm" (ngSubmit)="saveDetail(employmentForm)">
+    <table>
+        <tr>
+            <td>Employment ID</td><td> <input type="text" name="empid" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Type of Employment</td><td> <input type="text" name="typeOfEmployment" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Annual Salary</td><td> <input type="text" name="annualSalary" ngModel> </td>
+        </tr>
+        <tr>
+            <td>Existing EMI</td><td> <input type="text" name="existingEMI" ngModel> </td>
+        </tr>
+
+        <tr>
+            <td><input type="reset" value="RESET"></td>
+            <td> <input type="submit" value="SAVE"> </td>
+        </tr>
+    </table>
+</form> -->
+
+
+<!-- <section class="vh-100 gradient-custom">
+    <form #detailForm="ngForm" (ngSubmit)="saveDetail(detailForm)">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase mb-5">Employment Details</h2>
+      
+                    <div class="form-outline form-white mb-4">
+                      <input type="text" id="typeEmailX" class="form-control form-control-lg" name="empid" ngModel/>
+                      <label class="form-label" >Employment Id</label>
+                    </div>
+    
+                    <div class="form-outline form-white mb-4">
+                        <input type="text" id="typeEmailX" class="form-control form-control-lg" name="typeOfEmployment" ngModel />
+                        <label class="form-label" >Type of Employment</label>
+                      </div>
+    
+                      <div class="form-outline form-white mb-4">
+                        <input type="number" id="typeEmailX" class="form-control form-control-lg" name="annualSalary" ngModel/>
+                        <label class="form-label" >Annual Salary</label>
+                      </div>
+
+                      <div class="form-outline form-white mb-4">
+                        <input type="number" id="typeEmailX" class="form-control form-control-lg" name="existingEMI" ngModel/>
+                        <label class="form-label" >Existing EMI</label>
+                      </div>
+    
+      
+                    <button class="btn btn-outline-light btn-lg px-5 me-5" type="submit">Submit</button>
+                    <button class="btn btn-outline-light btn-lg px-5" type="reset">Reset</button>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </form>
+      </section> -->
+
+
+
+
+
+
+
+
+
+
+
+      <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Application Form</h2>
+                </div>
+                <div class="card-body">
+    
+                    <form #detailForm="ngForm" #checkForm="ngForm" (ngSubmit)="saveDetail(detailForm)" (ngSubmit)="employmentDetails(checkForm.value)">
+    
+                        <!--Employment Details-->
+                        <div class="mb-4">
+                            <h2 style="text-align: center; font-weight: 600;">Employment Details</h2>
+                        </div>
+
+                        <!--<div class="form-row">
+                            <div class="name">Employment ID</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" id="empid" name="empid" required
+                                    #empid="ngModel" placeholder="Enter Application ID" minlength="2" maxlength="10" pattern="^[0-9]+$" ngModel>
+                                <span *ngIf="empid.invalid && empid.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                                </div>
+                            </div>
+                        </div>-->
+
+                        <div class="form-row">
+                            <div class="name">Type of Employment</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    
+                                    <select name="subject" class="input--style-5" id="typeOfEmployment" name="typeOfEmployment" required #typeOfEmployment='ngModel'  placeholder="Enter your type of employment name" 
+                                    minlength="3" maxlength="20" pattern="^[a-zA-Z]+[ ][a-zA-Z]+$" ngModel style="padding-right: 310px; padding-top: 10px; padding-bottom: 10px; border: none;">
+                                    
+                                        <option disabled="disabled" selected="selected">Choose a option</option>
+                                        <span *ngIf="typeOfEmployment.invalid && typeOfEmployment.touched" style="color: red;">
+                                            Please enter a valid input 
+                                        </span><br>
+                                        <option>Salaried Person</option>
+                                        <option>Self Employed</option>
+                                        <option>Others Employment</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Annual Salary</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5"  id="annualSalary" name="annualSalary" required #annualSalary='ngModel' placeholder="Enter your Annual Salary" pattern="[0-9]+$" maxlength="10" ngModel>
+                                </div>
+                            <span *ngIf="annualSalary.invalid && annualSalary.touched" style="color: red;">
+                            Please enter a valid input </span><br> 
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="name">Existing EMI</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5"  id="existingEMI" name="existingEMI" required #existingEMI='ngModel' placeholder="Enter your Mobile Number" pattern="[0-9]+$" maxlength="10" ngModel>
+                                </div>
+                            <span *ngIf="existingEMI.invalid && existingEMI.touched" style="color: red;">
+                            Please enter a valid input </span><br> 
+                            </div>
+                        </div>
+
+                        <!--<div class="form-row">
+                            <div class="name">Application ID</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" id="appid" name="appid" required
+                                    #appid="ngModel" placeholder="Enter your Application ID" pattern="^[0-9]+$" ngModel>
+                                <span *ngIf="appid.invalid && appid.touched" style="color: red;">
+                                Please enter a valid input </span><br>
+                                </div>
+                            </div>
+                        </div>-->
+    
+                        <div class="text-center">
+                            <button [disabled]="checkForm.invalid" class="btn btn--radius-2 btn--red " type="submit">
+                                Submit
+                            </button> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      

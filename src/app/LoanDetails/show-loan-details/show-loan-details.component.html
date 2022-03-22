@@ -1,0 +1,15 @@
+<p>show-loan-details works!</p>
+
+<table class="table table-striped">
+    <tr><td>Loan Id</td>
+        <td>Loan Amount</td>
+        <td>Loan Tenure</td>
+        <td>Rate Of interest</td>
+       </tr>
+        <tr *ngFor ="let lh of loanList">
+            <td>{{lh.loanId}}</td>
+            <td>{{lh.loanAmount}}</td>
+            <td>{{lh.loanTenure}}</td>
+            <td>{{lh.rateOfInterest}}</td>
+        </tr>
+</table>

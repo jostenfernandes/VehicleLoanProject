@@ -1,0 +1,34 @@
+
+
+<p>showvehicles works!</p>
+
+<table class="table table-striped">
+    <tr><td>Application Id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>DOB</td>
+        <td>Gender</td>
+        <td>Mobile No</td>
+        <td>Email Id</td>
+        <td>Address</td>
+        <td>State</td>
+        <td>City</td>
+        <td>PinCode</td>
+        <td>AdharCard</td>
+        <td>Pan No</td></tr>
+        <tr *ngFor="let vh of personalList">
+            <td>{{vh.appid}}</td>
+            <td>{{vh.firstName}}</td>
+            <td>{{vh.lastName}}</td>
+            <td>{{vh.dob}}</td>
+            <td>{{vh.gender}}</td>
+            <td>{{vh.mobileNo}}</td>
+            <td>{{vh.mailId}}</td>
+            <td>{{vh.address}}</td>
+            <td>{{vh.state}}</td>
+            <td>{{vh.city}}</td>
+            <td>{{vh.princode}}</td>
+            <td>{{vh.adhar}}</td>
+            <td>{{vh.pan}}</td>
+        </tr>
+</table>

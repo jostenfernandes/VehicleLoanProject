@@ -1,0 +1,15 @@
+<p>show-vehicle works!</p>
+
+<table class="table table-striped">
+    <tr><td>Vehicle Id</td>
+        <td>Car Make</td>
+        <td>Car Model</td>
+        <td>Ex-ShowRoom Price</td>
+       </tr>
+        <tr *ngFor ="let vh of vehicleList">
+            <td>{{vh.vid}}</td>
+            <td>{{vh.carMake}}</td>
+            <td>{{vh.carModel}}</td>
+            <td>{{vh.exShowroomPrice}}</td>
+        </tr>
+</table>
